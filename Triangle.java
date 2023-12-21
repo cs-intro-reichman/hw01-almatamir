@@ -5,6 +5,29 @@
  */ 
 public class Triangle {
 	public static void main(String[] args) {
-		// Put your code here	
+	  int side1 = Integer.parseInt(args[0]);
+      int side2 = Integer.parseInt(args[1]);
+      int side3 = Integer.parseInt(args[2]);
+      int min=side1;
+      boolean stop=true;
+      while(stop==true)
+      {
+        if(min<side2+side3)
+        {
+            min=side2;
+            if(min<side1+side3)
+            {
+                  min=side3;
+                  if(min<side1+side2){
+                        System.out.println("numbers can creat a triangle");
+                        stop=false;
+                  }
+                  else {System.out.println("cant be a triangle");
+               stop=false;}
+            } else {System.out.println("cant be a triangle");
+               stop=false;}
+        } else {System.out.println("cant be a triangle");
+               stop=false;}
+      }
 	}
 }

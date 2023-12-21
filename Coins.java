@@ -4,9 +4,12 @@
  */
 public class Coins {
 	public static void main(String[] args) {
-		// Put your code here
+	  int cents = Integer.parseInt(args[0]);
+      int quarter= cents/4;
+      int remains= cents%4;
+      System.out.println("the maximum amount of quarters coins for "+ cents+ " cents is: "+quarter);
+      System.out.println("there are "+ remains+ " cents coins left");
 
 
-		
 	}
 }
