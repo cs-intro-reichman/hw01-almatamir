@@ -8,26 +8,20 @@ public class Triangle {
 	  int side1 = Integer.parseInt(args[0]);
       int side2 = Integer.parseInt(args[1]);
       int side3 = Integer.parseInt(args[2]);
-      int min=side1;
-      boolean stop=true;
-      while(stop==true)
+      string false_statement = side1+", "+side2+ ", " + side3+ ": false";
+      string true_statement = side1+", "+side2+ ", " + side3+ ": true";
+      if (side1 + side2 <= side3)
       {
-        if(min<side2+side3)
-        {
-            min=side2;
-            if(min<side1+side3)
-            {
-                  min=side3;
-                  if(min<side1+side2){
-                        System.out.println("numbers can creat a triangle");
-                        stop=false;
-                  }
-                  else {System.out.println("cant be a triangle");
-               stop=false;}
-            } else {System.out.println("cant be a triangle");
-               stop=false;}
-        } else {System.out.println("cant be a triangle");
-               stop=false;}
+        System.out.println(false_statement);
       }
+      if (side2 + side3 <= side1)
+      {
+        System.out.println(false_statement);
+      }
+      if (side1 + side3 <= side2)
+      {
+        System.out.println(false_statement);
+      }
+      System.out.println(true_statement);
 	}
 }
