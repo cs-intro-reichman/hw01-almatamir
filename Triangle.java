@@ -8,8 +8,8 @@ public class Triangle {
 	  int side1 = Integer.parseInt(args[0]);
       int side2 = Integer.parseInt(args[1]);
       int side3 = Integer.parseInt(args[2]);
-      string false_statement = side1+", "+side2+ ", " + side3+ ": false";
-      string true_statement = side1+", "+side2+ ", " + side3+ ": true";
+      String false_statement = side1+", "+side2+ ", " + side3+ ": false";
+      String true_statement = side1+", "+side2+ ", " + side3+ ": true";
       if (side1 + side2 <= side3)
       {
         System.out.println(false_statement);
