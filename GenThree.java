@@ -12,6 +12,7 @@ public class GenThree {
       int r2 = (int) (Math.random()*(max - min1) + min1);
       int r3 = (int) (Math.random()*(max - min1) + min1);
       int min= Math.min(r,Math.min(r2,r3));
+      System.out.println(r+" "+r2+" "+r3+" "+min);
       
 
 	}
