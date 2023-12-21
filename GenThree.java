@@ -12,6 +12,6 @@ public class GenThree {
       int r2 = (int) (Math.random()*(max - min1) + min1);
       int r3 = (int) (Math.random()*(max - min1) + min1);
       int min= Math.min(r,Math.min(r2,r3));
-      System.out.println(r + ", " + r2 ", " + r3 + "the minimum random number was: " + min);	
+      System.out.println(r + ", " + r2 + ", " + r3+ "the minimal number that was generated" + min);	
 	}
 }
