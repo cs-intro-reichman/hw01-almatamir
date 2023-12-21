@@ -12,7 +12,10 @@ public class GenThree {
       int r2 = (int) (Math.random()*(max - min) + min);
       int r3 = (int) (Math.random()*(max - min) + min);
       int minr= Math.min(r,Math.min(r2,r3));
-      System.out.println("for input string: "+r+" "+r2+" "+r3+" "+minr);
+      System.out.println("Random Integer 1: " + r);
+      System.out.println("Random Integer 2: " + r2);
+      System.out.println("Random Integer 3: " + r3);
+      System.out.println("The minimum random number is: " + minr);
       
 
 	}
