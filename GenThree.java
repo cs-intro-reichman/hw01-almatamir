@@ -15,7 +15,7 @@ public class GenThree {
       System.out.println(r);
       System.out.println(r2);
       System.out.println(r3);
-      System.out.println("The minimum random number is: " + minr);
+      System.out.println("the minimal number that was generated is:" + minr);
       
 
 	}
