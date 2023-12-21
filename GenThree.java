@@ -4,13 +4,13 @@
  */
 public class GenThree {
 	public static void main(String[] args) {
-	  int a =  Integer.parseint(args[0]);
-      int b = Integer.parseint(args[1]);
+	  int a =  Integer.parseInt(args[0]);
+      int b = Integer.parseInt(args[1]);
       int min1= Math.min(a,b);
       int max= Math.max(a,b);
-      int r = (int) (Math.random()*(min1-max+1)+max);
-      int r2 = (int) (Math.random()*(min1-max+1)+max);
-      int r3 = (int) (Math.random()*(min1-max+1)+max);
+      int r = (int) (Math.random()*(max - min1 + 1) + min1);
+      int r2 = (int) (Math.random()*(max - min1 + 1) + min1);
+      int r3 = (int) (Math.random()*(max - min1 + 1) + min1);
       int min= Math.min(r,Math.min(r2,r3));
       System.out.println("For input string: "+ r+ ", " +r2+", "+r3+" the minimum random number is: "+ min);	
 	}
