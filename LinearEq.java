@@ -12,7 +12,7 @@ public class LinearEq {
       double x;
       double save = c-b;
       x=save/a;
-      System.out.println(a+"x + "+b+" = "+c);
-      System.out.println("x is: "+x);
+      System.out.println(a+" * x + "+b+" = "+c);
+      System.out.println("x = "+x);
   }
 }
