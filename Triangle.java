@@ -4,7 +4,7 @@
  * Write a program that tests if three given integers form a triangle.
  */ 
 public class Triangle {
-	public static void main(String[] args) {
+	public static boolean main(String[] args) {
 	  int side1 = Integer.parseInt(args[0]);
       int side2 = Integer.parseInt(args[1]);
       int side3 = Integer.parseInt(args[2]);
@@ -18,16 +18,16 @@ public class Triangle {
             if(min<side1+side3)
             {
                   min=side3;
-                  if(min<side1+side2)
-                  {
-                        return true;
+                  if(min<side1+side2){
+                        System.out.println("true");
+                        stop=false;
                   }
-                  return false;
-               
-            } return false;
-            
-        } return false;
-            
-      } return false;
+                  else {System.out.println("cant be a triangle");
+               stop=false;}
+            } else {System.out.println("cant be a triangle");
+               stop=false;}
+        } else {System.out.println("cant be a triangle");
+               stop=false;}
+      }
 	}
 }
