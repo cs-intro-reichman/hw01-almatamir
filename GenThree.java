@@ -4,8 +4,8 @@
  */
 public class GenThree {
 	public static void main(String[] args) {
-	  int a = Integer.parseInt(args[0]);
-      int b = Integer.parseInt(args[1]);
+	  double a =  Double.parseDouble(args[0]);
+      double b = Double.parseDouble(args[1]);
       double min1= Math.min(a,b);
       double max= Math.max(a,b);
       double r = (Math.random()*(min1-max+1)+max);
