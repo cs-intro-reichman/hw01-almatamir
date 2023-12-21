@@ -5,23 +5,19 @@
  */ 
 public class Triangle {
 	public static void main(String[] args) {
-	  int side1 = Integer.parseInt(args[0]);
-      int side2 = Integer.parseInt(args[1]);
-      int side3 = Integer.parseInt(args[2]);
-      String false_statement = side1+", "+side2+ ", " + side3+ ": false";
-      String true_statement = side1+", "+side2+ ", " + side3+ ": true";
-      if (side1 + side2 <= side3)
-      {
-        System.out.println(false_statement);
-      }
-      if (side2 + side3 <= side1)
-      {
-        System.out.println(false_statement);
-      }
-      if (side1 + side3 <= side2)
-      {
-        System.out.println(false_statement);
-      }
-      System.out.println(true_statement);
+        int side1 = Integer.parseInt(args[0]);
+        int side2 = Integer.parseInt(args[1]);
+        int side3 = Integer.parseInt(args[2]);
+        String false_statement = side1+", "+side2+ ", " + side3+ ": false";
+        String true_statement = side1+", "+side2+ ", " + side3+ ": true";
+        if (side1 + side2 <= side3) {
+            System.out.println(false_statement);
+        } else if (side2 + side3 <= side1) {
+            System.out.println(false_statement);
+        } else if (side1 + side3 <= side2) {
+            System.out.println(false_statement);
+        } else {
+            System.out.println(true_statement);
+        }
 	}
 }
