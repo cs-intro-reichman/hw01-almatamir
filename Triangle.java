@@ -18,16 +18,16 @@ public class Triangle {
             if(min<side1+side3)
             {
                   min=side3;
-                  if(min<side1+side2){
-                        System.out.println("numbers can creat a triangle");
-                        stop=false;
+                  if(min<side1+side2)
+                  {
+                        return true;
                   }
-                  else {System.out.println("cant be a triangle");
-               stop=false;}
-            } else {System.out.println("cant be a triangle");
-               stop=false;}
-        } else {System.out.println("cant be a triangle");
-               stop=false;}
-      }
+                  return false;
+               
+            } return false;
+            
+        } return false;
+            
+      } return false;
 	}
 }
